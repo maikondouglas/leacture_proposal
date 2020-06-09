@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_06_09_135243) do
 
   create_table "proposals", force: :cascade do |t|
     t.string "track"
-    t.time "lecture_time"
+    t.string "lecture_time"
     t.string "description"
     t.string "duration"
     t.datetime "created_at", null: false
