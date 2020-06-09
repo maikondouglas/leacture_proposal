@@ -6,8 +6,8 @@ Para que esse projeto possa ser executado sem nenhum erro é necessário seguir 
 
 * Versões:
 
-Ruby:  '2.4.9'
-Rails: '5.2.4.3'
+Ruby >=  '2.4.9'
+Rails >= '5.2.4.3'
 
 * Configuração da Maquina
 
@@ -15,11 +15,11 @@ Foi utilizado para realizar a criação do projeto uma VM levantada em Vagrant c
 
 * Database
 
-O banco utilizado foi o que já vem por padrão no Rails (SQLite).
+O banco utilizado foi o que já vem por padrão no Rails (SQLite) por tanto não sera necessário parametrização de um novo banco.
 
 * Database Inicialização
 
-Para conseguir levantar a app em sua máquina tornasse necesário executar os seguintes comandos para que ele possa criar o banco e migrar as informações para o mesmo:
+Para conseguir levantar a app em sua máquina tornasse necessário executar os seguintes comandos para que ele possa criar o banco e migrar as informações para o mesmo:
 
 $ rails db:create db:migrate db:seed
 
