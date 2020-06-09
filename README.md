@@ -1,24 +1,26 @@
-# README
+# Leacture Proposal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para a criação desse projeto foi tulizado a API-only do proprio Rails.
 
-Things you may want to cover:
+Para que esse projeto possa ser executado sem nenhum erro é necessário seguir os padrões á baixo:
 
-* Ruby version
+* Versões:
 
-* System dependencies
+Ruby:  '2.4.9'
+Rails: '5.2.4.3'
 
-* Configuration
+* Configuração da Maquina
 
-* Database creation
+Foi utilizado para realizar a criação do projeto uma VM levantada em Vagrant com o terminal linux Ubuntu.
 
-* Database initialization
+* Database
 
-* How to run the test suite
+O banco utilizado foi o que já vem por padrão no Rails (SQLite).
 
-* Services (job queues, cache servers, search engines, etc.)
+* Database Inicialização
 
-* Deployment instructions
+Para conseguir levantar a app em sua máquina tornasse necesário executar os seguintes comandos para que ele possa criar o banco e migrar as informações para o mesmo:
 
-* ...
+$ rails db:create db:migrate db:seed
+
+O "db:seed" é para que possa levar os dados que foram adicionados em /db/seeds.rb.
