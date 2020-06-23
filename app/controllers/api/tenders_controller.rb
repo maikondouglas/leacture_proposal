@@ -35,7 +35,7 @@ module Api
         proposal = Proposal.find(params[:id])
 
 				proposal.destroy
-				render json: {status: 'SUCCESS', message:'Deleted article', data:proposal},status: :accepted
+				render json: {status: 'SUCCESS', message:'Deleted lecture', data:proposal},status: :accepted
       end
 
       private
